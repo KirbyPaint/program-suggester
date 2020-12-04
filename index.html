@@ -48,76 +48,98 @@
 -->
 
 <body>
-  <h1>Programming Quiz for Beginners</h1>
+  <div class="container">
+    <h1>Programming Quiz for Beginners</h1>
 
-  <p>In today's ever-changing world, more and more people are turning to programming for a source of income. A successful programmer can be set for life, but there's that keyword: successful.<br>
-    Do you have what it takes to be a programmer? If you're not sure, take the quiz below, and see if programming is for you!</p>
+    <p>In today's ever-changing world, more and more people are turning to programming for a source of income. A successful programmer can be set for life, but there's that keyword: successful.<br>
+      Do you have what it takes to be a programmer? If you're not sure, take the quiz below, and see if programming is for you!</p>
 
-  <form id="question1"> 
-    <div class="form-group">
-      <p>Do you like being able to read code?</p>
-      <input type="radio" name="choice1" value="1"> Yes<br>
-      <input type="radio" name="choice2" value="2"> Yes, but I want it to be difficult<br>
-      <input type="radio" name="choice3" value="3"> No
+    <div id="ready">
+      <form id="readyButton"> 
+        <button type="button" id="start" class="btn btn-primary">START!</button>
+      </form>
     </div>
-    <button type="submit" id="next" class="btn">Next Question</button>
-  </form>
 
-  <form id="question2"> 
-    <div class="form-group">
-      <p>Are you strict on spelling</p>
-      <input type="radio" name="choice1" value="1"> Yes<br>
-      <input type="radio" name="choice2" value="2"> No
+    <div id="one">
+      <form id="question1"> 
+        <div class="radio">
+          <p>Do you like being able to read code?</p>
+          <input type="radio" name="q1" value="1"> Yes<br>
+          <input type="radio" name="q1" value="2"> Yes, but I want it to be difficult<br>
+          <input type="radio" name="q1" value="3"> No
+        </div>
+        <button type="button" id="next1" class="btn">Next Question</button>
+      </form>
     </div>
-    <button type="submit" id="next" class="btn">Next Question</button>
-  </form>
 
-  <form id="question3"> 
-    <div class="form-group">
-      <p>Would you prefer to work on the front-end or the back-end?</p>
-      <input type="radio" name="choice1" value="1"> Front-End<br>
-      <input type="radio" name="choice2" value="2"> Back-End
+    <div id="two">
+      <form id="question2"> 
+        <div class="radio">
+          <p>Are you strict on spelling?</p>
+          <input type="radio" name="q2" value="1"> Yes<br>
+          <input type="radio" name="q2" value="2"> No
+        </div>
+        <button type="button" id="next2" class="btn">Next Question</button>
+      </form>
     </div>
-    <button type="submit" id="next" class="btn">Next Question</button>
-  </form>
 
-  <form id="question4"> 
-    <label for="scale">On a scale of one to ten, how important is understanding how code actually works to you?</label>
-    <select name="scale" id="scale">
-      <option value="1">1</option>
-      <option value="2">2</option>
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5</option>
-      <option value="6">6</option>
-      <option value="7">7</option>
-      <option value="8">8</option>
-      <option value="9">9</option>
-      <option value="10">10</option>
-    </select>
-  </form>
-
-  <form id="question5"> 
-    <div class="form-group">
-      <p>How important is job security to you?</p>
-      <input type="radio" name="choice1" value="5"> Very<br>
-      <input type="radio" name="choice2" value="4"> Somewhat<br>
-      <input type="radio" name="choice3" value="3"> Eh, a job's a job<br>
-      <input type="radio" name="choice4" value="2"> Not important at all<br>
-      <input type="radio" name="choice5" value="1"> I could be fired today and not care
+    <div id="three">
+      <form id="question3"> 
+        <div class="radio">
+          <p>Would you prefer to work on the front-end or the back-end?</p>
+          <input type="radio" name="choice1" value="1"> Front-End<br>
+          <input type="radio" name="choice2" value="2"> Back-End
+        </div>
+        <button type="button" id="next3" class="btn">Next Question</button>
+      </form>
     </div>
-    <button type="submit" id="next" class="btn">Show me my results!</button>
-  </form>
 
-<!--
-Results:
+    <div id="four">
+      <form id="question4"> 
+        <label for="scale">On a scale of one to ten, how important is understanding how code actually works to you?</label>
+        <select name="scale" id="scale">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+        <br>
+        <button type="button" id="next4" class="btn">Next Question</button>
+      </form>
+    </div>
 
-Above 20: JSFuck
-15-20: Java
-12-14: JS
-9-11: C++
-< 9: Python
--->
+    <div id="five">
+      <form id="question5"> 
+        <div class="form-group">
+          <p>How important is job security to you?</p>
+          <input type="radio" name="choice1" value="5"> Very<br>
+          <input type="radio" name="choice2" value="4"> Somewhat<br>
+          <input type="radio" name="choice3" value="3"> Eh, a job's a job<br>
+          <input type="radio" name="choice4" value="2"> Not important at all<br>
+          <input type="radio" name="choice5" value="1"> I could be fired today and not care
+        </div>
+        <button type="submit" id="finish" class="btn">Show me my results!</button>
+      </form>
+    </div>
+    <div id="output">
 
+    </div>
+
+  <!--
+  Results:
+
+  Above 20: JSFuck
+  15-20: Java
+  12-14: JS
+  9-11: C++
+  < 9: Python
+  -->
+  </div>
 </body>
 </html>
