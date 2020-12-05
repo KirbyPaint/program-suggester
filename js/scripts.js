@@ -50,8 +50,8 @@ $(document).ready(function() {
 
   $("form#add").submit(function(event) {
     event.preventDefault();
-      const buttonOne = $("input:radio[name=q1]:checked").val(); // Need to change this to get the value of the selected radio buttons
-      $("#output").text(buttonOne);
-      console.log(buttonOne);
+      const choiceOne = $("input:radio[name=q1]:checked").val(); // Need to change this to get the value of the selected radio buttons
+      $("#output").text(choiceOne);
+      console.log(choiceOne);
    });
 });
