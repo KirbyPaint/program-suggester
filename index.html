@@ -83,15 +83,15 @@
       <div id="three">
         <div class="radio">
           <p>Would you prefer to work on the front-end or the back-end?</p>
-          <input type="radio" name="choice1" value="1" checked> Front-End<br>
-          <input type="radio" name="choice2" value="2"> Back-End
+          <input type="radio" name="q3" value="1" checked> Front-End<br> <!-- This is not being checked by default? -->
+          <input type="radio" name="q3" value="2"> Back-End
         </div>
         <button type="button" id="next3" class="btn">Next Question</button>
       </div>
 
       <div id="four">
         <label for="scale">On a scale of one to ten, how important is understanding how code actually works to you?</label>
-        <select name="scale" id="scale">
+        <select name="scale" id="q4">
           <option value="1">1</option>
           <option value="2">2</option>
           <option value="3">3</option>
@@ -110,11 +110,11 @@
       <div id="five">
         <div class="form-group">
           <p>How important is job security to you?</p>
-          <input type="radio" name="choice1" value="5" checked> Very<br>
-          <input type="radio" name="choice2" value="4"> Somewhat<br>
-          <input type="radio" name="choice3" value="3"> Eh, a job's a job<br>
-          <input type="radio" name="choice4" value="2"> Not important at all<br>
-          <input type="radio" name="choice5" value="1"> I could be fired today and not care
+          <input type="radio" name="q5" value="5" checked> Very<br>
+          <input type="radio" name="q5" value="4"> Somewhat<br>
+          <input type="radio" name="q5" value="3"> Eh, a job's a job<br>
+          <input type="radio" name="q5" value="2"> Not important at all<br>
+          <input type="radio" name="q5" value="1"> I could be fired today and not care
         </div>
         <button type="submit" id="finish" class="btn">Show me my results!</button>
       </div>
