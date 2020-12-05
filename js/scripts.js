@@ -39,11 +39,19 @@ $(document).ready(function() {
     $('#five').show();
   });
 
+  $("button#finish").click(function() {
+    $('#one').hide();
+    $('#two').hide();
+    $('#three').hide();
+    $('#four').hide();
+    $('#five').hide();
+    $('#output').show(); // Submit only refreshing the page not showing results
+  });
+
   $("form#add").submit(function(event) {
     event.preventDefault();
-     const number1 = parseInt($("#add1").val()); // Need to change this to get the value of the selected radio buttons
-     const number2 = parseInt($("#add2").val()); // Additionally, force a user to choose a radio button (probably just select one by default)
-     const result = add(number1, number2);
-     $("#output").text(result);
+      const buttonOne = $("input:radio[name=q1]:checked").val(); // Need to change this to get the value of the selected radio buttons
+      $("#output").text(buttonOne);
+      console.log(buttonOne);
    });
 });
