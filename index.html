@@ -19,8 +19,8 @@
   PROJECT REQUIREMENTS
 
     [ ] Site uses branching to return the result.
-    [ ] jQuery is used to show and hide the result after questions are answered and submitted. (Tip: test your app several times with different answers.)
-    [ ] Form gathers input from the user.
+    [X] jQuery is used to show and hide the result after questions are answered and submitted. (Tip: test your app several times with different answers.)
+    [X] Form gathers input from the user.
     [ ] Variable names are descriptive of what they represent.
     [ ] Web page is styled using custom CSS.
     [ ] The project is in a presentable, portfolio-quality state.
@@ -31,11 +31,11 @@
       [ ] Code is clean, well-refactored, and easy-to-read. This includes correct indendation, spacing, and including only necessary comments and debugging tools.
       [ ] Commits are made regularly with clear messages that finish the phrase "It will…".
       [ ] Project README that includes, bare minimum:
-        [ ] author name
-        [ ] program name
+        [X] author name
+        [X] program name
         [ ] detailed setup instructions
-        [ ] description
-        [ ] copyright and license information
+        [X] description
+        [X] copyright and license information
 
   Bonus
 
@@ -63,12 +63,12 @@
     <form id="question1"> 
       <div id="one">
         <div class="radio">
-          <p>Do you like being able to read code?</p>
-          <input type="radio" name="q1" value="1" checked> Yes<br>
-          <input type="radio" name="q1" value="2"> Yes, but I want it to be difficult<br>
+          <p>Do you like being able to read code?</p>       <!-- Come back to this -->
+          <input type="radio" name="q1" value="1" checked> Yes <br>
+          <input type="radio" name="q1" value="2"> Yes, but I want it to be difficult <br>
           <input type="radio" name="q1" value="3"> No
         </div>
-        <button type="button" id="next1" class="btn">Next Question</button>
+        <button type="button" id="next1" class="btn btn-outline-secondary">Next Question</button>
       </div>
 
       <div id="two">
@@ -77,16 +77,16 @@
           <input type="radio" name="q2" value="1" checked> Yes<br>
           <input type="radio" name="q2" value="2"> No
         </div>
-        <button type="button" id="next2" class="btn">Next Question</button>
+        <button type="button" id="next2" class="btn btn-outline-secondary">Next Question</button>
       </div>
 
       <div id="three">
         <div class="radio">
           <p>Would you prefer to work on the front-end or the back-end?</p>
-          <input type="radio" name="q3" value="1" checked> Front-End<br> <!-- This is not being checked by default? -->
+          <input type="radio" name="q3" value="1" checked> Front-End<br>
           <input type="radio" name="q3" value="2"> Back-End
         </div>
-        <button type="button" id="next3" class="btn">Next Question</button>
+        <button type="button" id="next3" class="btn btn-outline-secondary">Next Question</button>
       </div>
 
       <div id="four">
@@ -104,7 +104,7 @@
           <option value="10">10</option>
         </select>
         <br>
-        <button type="button" id="next4" class="btn">Next Question</button>
+        <button type="button" id="next4" class="btn btn-outline-secondary">Next Question</button>
       </div>
 
       <div id="five">
@@ -116,7 +116,7 @@
           <input type="radio" name="q5" value="2"> Not important at all<br>
           <input type="radio" name="q5" value="1"> I could be fired today and not care
         </div>
-        <button type="submit" id="finish" class="btn">Show me my results!</button>
+        <button type="submit" id="finish" class="btn btn-success">Show me my results!</button>
       </div>
   </form>
   <div id="output">
