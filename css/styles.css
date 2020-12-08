@@ -1,19 +1,25 @@
-#one, #two, #three, #four, #five, #output, #Python, #CPlusPlus, #JavaScript, #Java, #JSF {
+#one, #two, #three, #four, #five, #output, #restart, #Python, #CPlusPlus, #JavaScript, #Java, #JSF {
   display: none;
 }
-/*
-li { 
-  list-style-image: url("img/bullet.gif");
+
+.bold {
+  font-weight: bold;
+  font-size: 80px;
+  text-align: center;
 }
 
-#search {
-  background-image: url("img/bullet.gif");
+.btext {
+  border: red;
+  border-width: 10px;
+  border-style: groove;
+  padding: 10px;
 }
 
-Neither of these worked and I am not sure why
-*/
-ul {
-  list-style-image: url(img/bullet.gif);
+.ptext {
+  border: royalblue;
+  border-width: 10px;
+  border-style: groove;
+  padding: 10px;
 }
 
 a:link {
@@ -32,4 +38,14 @@ a:hover {
 a:active {
   color: blue;
   text-decoration: underline;
+}
+
+footer {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  text-align: center;
+  padding-top: 300px;
+  padding-bottom: 50px;
 }

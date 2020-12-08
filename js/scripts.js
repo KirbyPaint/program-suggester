@@ -25,7 +25,7 @@ function total(one, two, three, four, five) {
 $(document).ready(function() {
   $("button#start").click(function() {
     $('#ready').hide();
-    $('#one').show();
+    $('#one, #restart').show();
   });
 
   $("button#next1").click(function() {
@@ -50,7 +50,12 @@ $(document).ready(function() {
 
   $("button#finish").click(function() {
     $('#five').hide();
-    $('#output').show();
+    $('#output, #restart').show();
+  });
+
+  $("button#restart").click(function() {
+    $('#ready').show();
+    $('#one, #two, #three, #four, #five, #output, #restart, #Python, #CPlusPlus, #JavaScript, #Java, #JSF').hide();
   });
 
   $("form#questions").submit(function(event) {

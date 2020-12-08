@@ -8,51 +8,12 @@
   <title>Programming Quiz for Beginners</title>
 </head>
 
-<!--
-  
-  Specifications:
-  
-    [X] Include a minimum of 5 survey questions.
-    [X] Offer a minimum of 3 different language suggestions.
-    [X] Don't forget regular Git commits and a detailed README. Commit messages should always be on-topic and professional in tone.
-
-  PROJECT REQUIREMENTS
-
-    [X] Site uses branching to return the result.
-    [X] jQuery is used to show and hide the result after questions are answered and submitted. (Tip: test your app several times with different answers.)
-    [X] Form gathers input from the user.
-    [X] Variable names are descriptive of what they represent.
-    [/] Web page is styled using custom CSS.
-    [X] The project is in a presentable, portfolio-quality state.
-    [ ] Required functionality is in place by the Thursday deadline.
-    [X] Project demonstrates understanding of concepts covered this week. If prompted, you are able to discuss your code with an instructor using correct terminology.
-
-    [ ] All previous standards (last week's objectives) are in place (see below).
-      [X] Code is clean, well-refactored, and easy-to-read. This includes correct indendation, spacing, and including only necessary comments and debugging tools.
-      [X] Commits are made regularly with clear messages that finish the phrase "It will…".
-      [ ] Project README that includes, bare minimum:
-        [X] author name
-        [X] program name
-        [ ] detailed setup instructions
-        [X] description
-        [X] copyright and license information
-
-  Bonus
-
-  If you finish the objectives with time to spare, consider adding additional features such as:
-    Ask the user for their name and address them directly in all of the responses to them: "Enrique, you ought to study Java, so you can learn how to make mobile apps for Android!".
-    Make questions multiple choice (like a, b, or c) and determine which track is right for a user by identifying the letter that was most frequently selected. For example: "You chose mostly a's, you should definitely study C#!".
-    Use fade in/out or slide in/out jQuery Effects throughout your project.
-    Other enhancements such as more custom CSS, animation, or modals as you desire.
-
--->
-
 <body>
   <div class="container">
     <h1>Programming Quiz for Beginners</h1>
 
     <p>In today's ever-changing world, more and more people are turning to programming for a source of income. A successful programmer can be set for life, but there's that keyword: successful.<br>
-      Do you have what it takes to be a programmer? If you're not sure, take the quiz below, and see if programming is for you!</p>
+      Do you have what it takes to be a programmer? If you're not sure what language to start with, take the quiz below, and see what language is for you!</p>
 
     <div id="ready">
       <form id="readyButton"> 
@@ -68,6 +29,9 @@
           <input type="radio" name="q1" value="2"> Yes, but I want it to be difficult <br>
           <input type="radio" name="q1" value="3"> No
         </div>
+        <br>
+        <br>
+        <br>
         <button type="button" id="next1" class="btn btn-outline-secondary">Next Question</button>
       </div>
 
@@ -77,6 +41,10 @@
           <input type="radio" name="q2" value="2" checked> Yes<br>
           <input type="radio" name="q2" value="1"> No
         </div>
+        <br>
+        <br>
+        <br>
+        <br>
         <button type="button" id="next2" class="btn btn-outline-secondary">Next Question</button>
       </div>
 
@@ -86,11 +54,16 @@
           <input type="radio" name="q3" value="1" checked> Front-End<br>
           <input type="radio" name="q3" value="2"> Back-End
         </div>
+        <br>
+        <br>
+        <br>
+        <br>
         <button type="button" id="next3" class="btn btn-outline-secondary">Next Question</button>
       </div>
 
       <div id="four">
         <label for="scale">On a scale of one to ten, how important is understanding how code actually works to you?</label>
+        <br>
         <select name="scale" id="q4">
           <option value="1">1</option>
           <option value="2">2</option>
@@ -103,6 +76,11 @@
           <option value="9">9</option>
           <option value="10">10</option>
         </select>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
         <br>
         <button type="button" id="next4" class="btn btn-outline-secondary">Next Question</button>
       </div>
@@ -118,15 +96,16 @@
         </div>
         <button type="submit" id="finish" class="btn btn-success">Show me my results!</button>
       </div>
+      <div class="bold">
+        <span id="output" class="btext"></span>
+      </div>
     </form>
-    <div id="output">
-
-    </div>
+    <br>
 
     <div id="Python">
-      <p>Congratulations! You are an ideal candidate for learning <a href="https://www.python.org/">Python!</a> Python is a fun little language, lacking a lot of the characteristics of most well-known programming languages, such as ending lines with semicolons and declaring variables with their type right at the get-go. Indentation is important, but you won't see very much punctuation from a beginning program. Additionally, it reads very well to the human eye, making reading over someone else's code a breeze.</p>
+      <p class="ptext">Congratulations! You are an ideal candidate for learning <a href="https://www.python.org/">Python!</a> Python is a fun little language, lacking a lot of the characteristics of most well-known programming languages, such as ending lines with semicolons and declaring variables with their type right at the get-go. Indentation is important, but you won't see very much punctuation from a beginning program. Additionally, it reads very well to the human eye, making reading over someone else's code a breeze.<br>>
 
-      <p>Here are some resources to learning Python:
+      Here are some resources to learning Python:
         <ul id="search">
           <li><a href="https://docs.python-guide.org/intro/learning/">https://docs.python-guide.org/intro/learning/</a></li>
           <li><a href="https://www.codecademy.com/learn/learn-python">https://www.codecademy.com/learn/learn-python</a></li>
@@ -136,9 +115,9 @@
     </div>
 
     <div id="CPlusPlus">
-      <p>Congratulations! You are an ideal candidate for learning <a href="https://www.cplusplus.com/">C++!</a> C++ is an extension of the C programming language. It was designed for system programming, and can be found in video game programming, web servers, and sometimes space probes. C++ can be quite powerful, but can also feel confusing to new users. The first time you see "std::cout << a;" might throw you for a loop, but it very quickly becomes familiar.</p>
+      <p>Congratulations! You are an ideal candidate for learning <a href="https://www.cplusplus.com/">C++!</a> C++ is an extension of the C programming language. It was designed for system programming, and can be found in video game programming, web servers, and sometimes space probes. C++ can be quite powerful, but can also feel confusing to new users. The first time you see "std::cout << a;" might throw you for a loop, but it very quickly becomes familiar.<br>
 
-      <p>Here are some resources to learning C++:
+      Here are some resources to learning C++:
         <ul>
           <li><a href="https://www.learncpp.com/">https://www.learncpp.com/</a></li>
           <li><a href="https://www.codecademy.com/learn/learn-c-plus-plus">https://www.codecademy.com/learn/learn-c-plus-plus</a></li>
@@ -148,9 +127,9 @@
     </div>
 
     <div id="JavaScript">
-      <p>Congratulations! You are an ideal candidate for learning <a href="https://www.javascript.com/">JavaScript!</a> The functionality of this very website was made largely with JavaScript (and of course, HTML and CSS). JavaScript, not to be confused with Java, is one of the core backbones of our current internet. Almost everything that a website can functionally do, regarding things higher level than just displaying text, is probably made in JavaScript. You should visit your favorite site without JavaScript on and see what breaks! Remember to fix it when you're done...</p>
+      <p>Congratulations! You are an ideal candidate for learning <a href="https://www.javascript.com/">JavaScript!</a> The functionality of this very website was made largely with JavaScript (and of course, HTML and CSS). JavaScript, not to be confused with Java, is one of the core backbones of our current internet. Almost everything that a website can functionally do, regarding things higher level than just displaying text, is probably designed with JavaScript. You should visit your favorite site without JavaScript on and see what breaks! Remember to fix it when you're done...<br>
 
-      <p>Here are some resources to learning JavaScript:
+      Here are some resources to learning JavaScript:
         <ul>
           <li><a href="https://www.epicodus.com/">https://www.epicodus.com/</a></li>
           <li><a href="https://www.codecademy.com/learn/introduction-to-javascript">https://www.codecademy.com/learn/introduction-to-javascript</a></li>
@@ -160,9 +139,9 @@
     </div>
 
     <div id="Java">
-      <p>Congratulations! You are an ideal candidate for learning <a href="https://www.java.com/en/">Java!</a> No, not <em><a href="https://www.javascript.com/">JavaScript.</a></em> Or the <a href="https://en.wikipedia.org/wiki/Java">Indonesian island.</a> Or the <a href="https://www.myrecipes.com/extracrispy/why-is-coffee-called-java">coffee.</a> Java is a very well-known language. Almost everyone has had a device that proudly displays "Powered by Java." Java advertises that over 3 BILLION devices (that's 3,000,000,000!) currently run some form of Java, whether it's an applet in a browser, an Android base for your smartphone, or just on a server.</p>
+      <p>Congratulations! You are an ideal candidate for learning <a href="https://www.java.com/en/">Java!</a> No, not <em><a href="https://www.javascript.com/">JavaScript.</a></em> Or the <a href="https://en.wikipedia.org/wiki/Java">Indonesian island.</a> Or the <a href="https://www.myrecipes.com/extracrispy/why-is-coffee-called-java">coffee.</a> Java is a very well-known language. Almost everyone has had a device that proudly displays "Powered by Java." Java advertises that over 3 BILLION devices (that's 3,000,000,000!) currently run some form of Java, whether it's an applet in a browser, an Android base for your smartphone, or just on a server.<br>
 
-      <p>Here are some resources to learning Java:
+      Here are some resources to learning Java:
         <ul>
           <li><a href="https://www.codecademy.com/learn/learn-java">https://www.codecademy.com/learn/learn-java</a></li>
           <li><a href="https://www.learnjavaonline.org/">https://www.learnjavaonline.org/</a></li>
@@ -174,8 +153,10 @@
     <div id="JSF">
       <p><a href="http://www.jsfuck.com/">Good Luck.</a></p>
     </div>
+
+    <footer>
+      <button type="button" id="restart" class="btn btn-danger">Restart Quiz!</button>
+    </footer> 
   </div>
-  <!-- Ensure button remains consistent on the page -->
-  <!-- Add a Re-do button at the end -->
 </body>
 </html>
