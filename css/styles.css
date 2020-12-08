@@ -1,3 +1,7 @@
-#one, #two, #three, #four, #five, #output {
+#one, #two, #three, #four, #five, #output, #Python, #CPlusPlus, #JavaScript, #Java, #JSF {
   display: none;
 }
+
+li { 
+  list-style-image: url(img/bullet.png);
+} 

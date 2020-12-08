@@ -1,21 +1,25 @@
 function total(one, two, three, four, five) {
   const totalVal = one + two + three + four + five;
   if (totalVal < 12) {
-    return "PYTHON";
+    $('#Python').show();
+    return "PYTHON!";
   }
   else if (totalVal >= 12 && totalVal < 15) {
-    return "C++";
+    $('#CPlusPlus').show();
+    return "C++!";
   }
   else if (totalVal >= 15 && totalVal < 18) {
-    return "JAVASCRIPT";
+    $('#JavaScript').show();
+    return "JAVASCRIPT!";
   }
   else if (totalVal >= 18 && totalVal < 21) {
-    return "JAVA";
+    $('#Java').show();
+    return "JAVA!";
   }
   else {
-    return "JSF*CK"
+    $('#JSF').show();
+    return "Oh no..."
   }
-  //return totalVal; //for debugging
 }
 
 $(document).ready(function() {
@@ -59,13 +63,3 @@ $(document).ready(function() {
     $("#output").text(total(choiceOne, choiceTwo, choiceThree, choiceFour, choiceFive));
   });
 });
-
-//Confirmed Working:
-
-//Above 20: JSFuck ***
-//18-20: Java ***
-//15-17: JS
-//12-14: C++ ***
-//< 12: Python ***
-
-//Definitely revise, Python isn't even an option ATM
