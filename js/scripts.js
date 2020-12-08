@@ -1,6 +1,21 @@
 function total(one, two, three, four, five) {
   const totalVal = one + two + three + four + five;
-  return totalVal; //for debugging
+  if (totalVal < 12) {
+    return "PYTHON";
+  }
+  else if (totalVal >= 12 && totalVal < 15) {
+    return "C++";
+  }
+  else if (totalVal >= 15 && totalVal < 18) {
+    return "JAVASCRIPT";
+  }
+  else if (totalVal >= 18 && totalVal < 21) {
+    return "JAVA";
+  }
+  else {
+    return "JSF*CK"
+  }
+  //return totalVal; //for debugging
 }
 
 $(document).ready(function() {
@@ -41,14 +56,16 @@ $(document).ready(function() {
     const choiceThree = parseInt($("input:radio[name=q3]:checked").val());
     const choiceFour = parseInt($("#q4").val());
     const choiceFive = parseInt($("input:radio[name=q5]:checked").val());
-    console.log(choiceOne);
-    console.log(choiceTwo);
-    console.log(choiceThree);
-    console.log(choiceFour);
-    console.log(choiceFive);
-    //$("#output").text(choiceOne + choiceTwo + choiceThree + choiceFour + choiceFive);
     $("#output").text(total(choiceOne, choiceTwo, choiceThree, choiceFour, choiceFive));
-    // if this works it will look identical
-    // it worked first try, I'm da bes
   });
 });
+
+//Confirmed Working:
+
+//Above 20: JSFuck ***
+//18-20: Java ***
+//15-17: JS
+//12-14: C++ ***
+//< 12: Python ***
+
+//Definitely revise, Python isn't even an option ATM
