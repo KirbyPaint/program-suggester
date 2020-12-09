@@ -10,8 +10,11 @@ _The purpose of this website is to demonstrate the principles learned thus far, 
 
 ## Setup/Installation Requirements
 
-* _Access the page at the following website:_
-* _<GITHUB PAGES SITE TO BE ADDED LATER>_
+* _You may access the page at the following website:_
+* _https://kirbypaint.github.io/program-suggester/_
+* _You may also download the entire site and project files by clicking on the green "Code" button next to the "About" panel, and either clone the project, open with GitHub Desktop, or download the files in a ZIP folder._
+
+* _Pages were tested with the current Firefox and Google Chrome browsers._
 
 ## Known Bugs
 
