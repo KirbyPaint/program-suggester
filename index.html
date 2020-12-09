@@ -12,17 +12,17 @@
   <div class="container">
     <h1>Programming Quiz for Beginners</h1>
 
-    <p>In today's ever-changing world, more and more people are turning to programming for a source of income. A successful programmer can be set for life, but there's that keyword: successful.<br>
+    <p class="ezRead">In today's ever-changing world, more and more people are turning to programming for a source of income. A successful programmer can be set for life, but there's that keyword: successful.<br>
       Do you have what it takes to be a programmer? If you're not sure what language to start with, take the quiz below, and see what language is for you!</p>
 
-    <div id="ready">
+    <div id="ready" class="ezRead">
       <form id="readyButton"> 
         <button type="button" id="start" class="btn btn-primary">START!</button>
       </form>
     </div>
 
     <form id="questions"> 
-      <div id="one">
+      <div id="one" class="ezRead">
         <div class="radio">
           <p>Do you like being able to read code?</p>
           <input type="radio" name="q1" value="1" checked> Yes <br>
@@ -32,10 +32,10 @@
         <br>
         <br>
         <br>
-        <button type="button" id="next1" class="btn btn-outline-secondary">Next Question</button>
+        <button type="button" id="next1" class="btn btn-secondary">Next Question</button>
       </div>
 
-      <div id="two">
+      <div id="two" class="ezRead">
         <div class="radio">
           <p>Are you strict on spelling?</p>
           <input type="radio" name="q2" value="2" checked> Yes<br>
@@ -45,10 +45,10 @@
         <br>
         <br>
         <br>
-        <button type="button" id="next2" class="btn btn-outline-secondary">Next Question</button>
+        <button type="button" id="next2" class="btn btn-secondary">Next Question</button>
       </div>
 
-      <div id="three">
+      <div id="three" class="ezRead">
         <div class="radio">
           <p>Would you prefer to work on the front-end or the back-end?</p>
           <input type="radio" name="q3" value="1" checked> Front-End<br>
@@ -58,11 +58,11 @@
         <br>
         <br>
         <br>
-        <button type="button" id="next3" class="btn btn-outline-secondary">Next Question</button>
+        <button type="button" id="next3" class="btn btn-secondary">Next Question</button>
       </div>
 
-      <div id="four">
-        <label for="scale">On a scale of one to ten, how important is understanding how code actually works to you?</label>
+      <div id="four" class="ezRead">
+        <label for="scale"><p>On a scale of one to ten, how important is understanding how code actually works to you?</p></label>
         <br>
         <select name="scale" id="q4">
           <option value="1">1</option>
@@ -82,10 +82,10 @@
         <br>
         <br>
         <br>
-        <button type="button" id="next4" class="btn btn-outline-secondary">Next Question</button>
+        <button type="button" id="next4" class="btn btn-secondary">Next Question</button>
       </div>
 
-      <div id="five">
+      <div id="five" class="ezRead">
         <div class="form-group">
           <p>How important is job security to you?</p>
           <input type="radio" name="q5" value="5" checked> Very<br>
@@ -103,16 +103,15 @@
     <br>
 
     <div id="Python">
-      <p class="ptext">Congratulations! You are an ideal candidate for learning <a href="https://www.python.org/">Python!</a> Python is a fun little language, lacking a lot of the characteristics of most well-known programming languages, such as ending lines with semicolons and declaring variables with their type right at the get-go. Indentation is important, but you won't see very much punctuation from a beginning program. Additionally, it reads very well to the human eye, making reading over someone else's code a breeze.</p>
+      <p class="ptext">Congratulations! You are an ideal candidate for learning <a href="https://www.python.org/">Python!</a> Python is a fun little language, lacking a lot of the characteristics of most well-known programming languages, such as ending lines with semicolons and declaring variables with their type right at the get-go. Indentation is important, but you won't see very much punctuation in a beginner's program. Additionally, it reads very well to the human eye, making reading over someone else's code a breeze.</p>
 
       <div class="ltext">
-        <p>Here are some resources to learning Python:
+        <p>Here are some resources to learning Python:</p>
           <ul id="search">
             <li><a href="https://docs.python-guide.org/intro/learning/">https://docs.python-guide.org/intro/learning/</a></li>
             <li><a href="https://www.codecademy.com/learn/learn-python">https://www.codecademy.com/learn/learn-python</a></li>
             <li><a href="https://www.youtube.com/watch?v=rfscVS0vtbw">https://www.youtube.com/watch?v=rfscVS0vtbw</a></li>
           </ul>
-        </p>
       </div>
     </div>
 
@@ -120,13 +119,12 @@
       <p class="ptext">Congratulations! You are an ideal candidate for learning <a href="https://www.cplusplus.com/">C++!</a> C++ is an extension of the C programming language. It was designed for system programming, and can be found in video game programming, web servers, and sometimes space probes. C++ can be quite powerful, but can also feel confusing to new users. The first time you see "std::cout << a;" might throw you for a loop, but it very quickly becomes familiar.</p>
 
       <div class="ltext">
-        <p>Here are some resources to learning C++:
+        <p>Here are some resources to learning C++:</p>
           <ul>
             <li><a href="https://www.learncpp.com/">https://www.learncpp.com/</a></li>
             <li><a href="https://www.codecademy.com/learn/learn-c-plus-plus">https://www.codecademy.com/learn/learn-c-plus-plus</a></li>
             <li><a href="https://www.programiz.com/cpp-programming">https://www.programiz.com/cpp-programming</a></li>
           </ul>
-        </p>
       </div>
     </div>
 
@@ -134,13 +132,12 @@
       <p class="ptext">Congratulations! You are an ideal candidate for learning <a href="https://www.javascript.com/">JavaScript!</a> The functionality of this very website was made largely with JavaScript (and of course, HTML and CSS). JavaScript, not to be confused with Java, is one of the core backbones of our current internet. Almost everything that a website can functionally do, regarding things higher level than just displaying text, is probably designed with JavaScript. You should visit your favorite site without JavaScript on and see what breaks! Remember to fix it when you're done...</p>
 
       <div class="ltext">
-        <p>Here are some resources to learning JavaScript:
+        <p>Here are some resources to learning JavaScript:</p>
           <ul>
             <li><a href="https://www.epicodus.com/">https://www.epicodus.com/</a></li>
             <li><a href="https://www.codecademy.com/learn/introduction-to-javascript">https://www.codecademy.com/learn/introduction-to-javascript</a></li>
             <li><a href="https://www.w3schools.com/js/DEFAULT.asp">https://www.w3schools.com/js/DEFAULT.asp</a></li>
           </ul>
-        </p>
       </div>
     </div>
 
@@ -148,18 +145,17 @@
       <p class="ptext">Congratulations! You are an ideal candidate for learning <a href="https://www.java.com/en/">Java!</a> No, not <em><a href="https://www.javascript.com/">JavaScript.</a></em> Or the <a href="https://en.wikipedia.org/wiki/Java">Indonesian island.</a> Or the <a href="https://www.myrecipes.com/extracrispy/why-is-coffee-called-java">coffee.</a> Java is a very well-known language. Almost everyone has had a device that proudly displays "Powered by Java." Java advertises that over 3 BILLION devices (that's 3,000,000,000!) currently run some form of Java, whether it's an applet in a browser, an Android base for your smartphone, or just on a server.</p>
 
       <div class="ltext">
-        <p>Here are some resources to learning Java:
+        <p>Here are some resources to learning Java:</p>
           <ul>
             <li><a href="https://www.codecademy.com/learn/learn-java">https://www.codecademy.com/learn/learn-java</a></li>
             <li><a href="https://www.learnjavaonline.org/">https://www.learnjavaonline.org/</a></li>
             <li><a href="https://www.w3schools.com/java/default.asp">https://www.w3schools.com/java/default.asp</a></li>
           </ul>
-        </p>
       </div>
     </div>
 
     <div id="JSF">
-      <p><a href="http://www.jsfuck.com/">Good Luck.</a></p>
+      <p class="special"><a href="http://www.jsfuck.com/">Good Luck.</a></p>
     </div>
 
     <footer>
