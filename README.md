@@ -1,6 +1,6 @@
 # _Programming Quiz_
 
-#### _Practice website to demonstrate JavaScript/jQuery understanding, 2020-12-03_
+#### _Practice website to demonstrate JavaScript/jQuery understanding, 2020-12-08_
 
 #### By _**Ash Porter (KirbyPaint)**_
 
@@ -15,7 +15,7 @@ _The purpose of this website is to demonstrate the principles learned thus far, 
 
 ## Known Bugs
 
-_Currently none as the site hardly exists_
+_No known bugs at this time._
 
 ## Support and contact details
 
